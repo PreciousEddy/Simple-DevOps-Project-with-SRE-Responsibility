@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Welcome to Presh!!</h1>
+
+    <h2>Current Weather in Texas</h2>
+    <h3>East (Houston)</h3>
+    <p>Description: {{ weather_east.description }}</p>
+    <p>Temperature: {{ weather_east.temperature }}°F</p>
+
+    <h3>West (El Paso)</h3>
+    <p>Description: {{ weather_west.description }}</p>
+    <p>Temperature: {{ weather_west.temperature }}°F</p>
+
+    <h3>North (Dallas)</h3>
+    <p>Description: {{ weather_north.description }}</p>
+    <p>Temperature: {{ weather_north.temperature }}°F</p>
+
+    <h3>South (San Antonio)</h3>
+    <p>Description: {{ weather_south.description }}</p>
+    <p>Temperature: {{ weather_south.temperature }}°F</p>
+
+    <h2>Current Time in Texas</h2>
+    <p>East (Central Time): {{ time_east }}</p>
+    <p>West (Mountain Time): {{ time_west }}</p>
+</body>
+</html>
