@@ -34,5 +34,11 @@ def home():
 
     return render_template("index.html", weather_east=weather_east, weather_west=weather_west, weather_north=weather_north, weather_south=weather_south, time_east=time_east, time_west=time_west)
 
+
+@app.route('/health')
+def health():
+    return "OK", 200
+
+
 if __name__ == '__main__':
     app.run(debug=True)
