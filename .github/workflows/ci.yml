@@ -15,9 +15,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m venv venv
-        source Simple-DevOps-Project-with-SRE-Responsibility/venv/bin/activate
+        source /venv/bin/activate
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        source Simple-DevOps-Project-with-SRE-Responsibility/venv/bin/activate
+        source /venv/bin/activate
         pytest
